@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 11:03:37 by afournie          #+#    #+#             */
-/*   Updated: 2026/05/21 15:12:39 by afournie         ###   ########.fr       */
+/*   Updated: 2026/05/21 17:22:42 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,18 @@ class Contact {
 	std::string lastName;
 	std::string nickName;
 	std::string phoneNumber;
-	std::string dSecret;
+	std::string darkestSecret;
 
 	public:
 	Contact( void );
 	~Contact( void );
 
-	void setContact(void);
-	void displayContact(void);
+	bool setContact(void);
+	std::string getFirstName(void) const;
+	std::string getLastName(void) const;
+	std::string getNickName(void) const;
+	std::string getPhoneNumber(void) const;
+	std::string getDarkestSecret(void) const;
 };
 
 #endif

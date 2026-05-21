@@ -6,43 +6,42 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 11:09:19 by afournie          #+#    #+#             */
-/*   Updated: 2026/05/21 15:24:18 by afournie         ###   ########.fr       */
+/*   Updated: 2026/05/21 17:48:25 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 
-void ft_add(void)
-{
-	return ;
-}
+// std::string trim(const std::string &str)
+// {
+// 	size_t start = 0;
+// 	size_t end = str.length();
 
-void ft_search(void)
-{
-	return;
-}
+// 	while (start < end && std::isspace(str[start]))
+// 		start++;
 
-void executeOrder(std::string tmp)
-{
-	if (tmp == "ADD")
-		ft_add();
-	else if (tmp == "SEARCH")
-		ft_search();
-	else if (tmp == "EXIT")
-		exit(EXIT_SUCCESS);
-	else
-		return ;
-}
+// 	while (end > start && std::isspace(str[end - 1]))
+// 		end--;
 
-int main (void)
+// 	return str.substr(start, end - start);
+// }
+
+int	main(void)
 {
-	std::string tmp;
+	PhoneBook phonebook;
+	std::string input;
 
 	while (1)
 	{
 		std::cout << "$> ";
-		std::getline(std::cin >> std::ws,tmp);
-		executeOrder(tmp);
+		if (!std::getline(std::cin >> std::ws, input))
+			return (1);
+		if (input == "ADD")
+			phonebook.addContact();
+		else if (input == "SEARCH")
+			phonebook.searchContact();
+		else if (input == "EXIT")
+			break;
 	}
 	return (0);
 }
