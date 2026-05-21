@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.class.hpp                                :+:      :+:    :+:   */
+/*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/13 11:03:45 by afournie          #+#    #+#             */
-/*   Updated: 2026/05/13 11:53:34 by afournie         ###   ########.fr       */
+/*   Created: 2026/05/13 11:03:40 by afournie          #+#    #+#             */
+/*   Updated: 2026/05/21 15:18:24 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_CLASS_H
-# define PHONEBOOK_CLASS_H
+#include "Contact.hpp"
 
-#include "PhoneBook.hpp"
+Contact::Contact(void) {
+	return ;
+}
 
-class PhoneBook {
+Contact::~Contact(void) {
+	return ;
+}
 
-	Contact contacts[8];
+void Contact::setContact(void)
+{
+	return ;
+}
 
-
-};
-
-#endif
+void Contact::displayContact(void)
+{
+	return ;
+}

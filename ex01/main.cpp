@@ -6,11 +6,21 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 11:09:19 by afournie          #+#    #+#             */
-/*   Updated: 2026/05/13 11:53:52 by afournie         ###   ########.fr       */
+/*   Updated: 2026/05/21 15:24:18 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+
+void ft_add(void)
+{
+	return ;
+}
+
+void ft_search(void)
+{
+	return;
+}
 
 void executeOrder(std::string tmp)
 {
@@ -19,7 +29,7 @@ void executeOrder(std::string tmp)
 	else if (tmp == "SEARCH")
 		ft_search();
 	else if (tmp == "EXIT")
-		ft_exit();
+		exit(EXIT_SUCCESS);
 	else
 		return ;
 }
