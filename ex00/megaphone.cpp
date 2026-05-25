@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 10:26:01 by afournie          #+#    #+#             */
-/*   Updated: 2026/05/13 10:53:01 by afournie         ###   ########.fr       */
+/*   Updated: 2026/05/25 09:58:12 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int ac, char **av)
 	if (ac < 2)
 	{
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
-		return (0);
+		return (1);
 	}
 	while (i < ac)
 	{
